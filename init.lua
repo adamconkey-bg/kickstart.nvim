@@ -162,6 +162,8 @@ vim.opt.scrolloff = 10
 -- See `:help 'confirm'`
 vim.opt.confirm = true
 
+vim.opt.shiftwidth = 4
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -204,6 +206,29 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
+-- vim.keymap.set('n', '<leader>a', '<cmd>AerialToggle<CR>')
+
+-- local harpoon = require 'harpoon'
+-- harpoon:setup()
+-- vim.keymap.set('n', '<leader>a', function()
+--   harpoon:list():add()
+-- end)
+-- vim.keymap.set('n', '<C-e>', function()
+--   harpoon.ui:toggle_quick_menu(harpoon:list())
+-- end)
+-- vim.keymap.set('n', '<leader>ha', function()
+--   harpoon:list():select(1)
+-- end)
+-- vim.keymap.set('n', '<leader>hs', function()
+--   harpoon:list():select(2)
+-- end)
+-- vim.keymap.set('n', '<leader>hd', function()
+--   harpoon:list():select(3)
+-- end)
+-- vim.keymap.set('n', '<leader-hf', function()
+--   harpoon:list():select(4)
+-- end)
+-- 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
