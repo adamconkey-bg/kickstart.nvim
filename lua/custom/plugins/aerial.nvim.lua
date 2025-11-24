@@ -3,6 +3,7 @@ return {
     'stevearc/aerial.nvim',
     opts = {},
     -- Optional dependencies
+    lazy = false,
     dependencies = {
       'nvim-treesitter/nvim-treesitter',
       'nvim-tree/nvim-web-devicons',
@@ -15,6 +16,9 @@ return {
           vim.keymap.set('n', '{', '<cmd>AerialPrev<CR>', { buffer = bufnr })
           vim.keymap.set('n', '}', '<cmd>AerialNext<CR>', { buffer = bufnr })
         end,
+        layout = {
+          min_width = 40,
+        },
       }
     end,
     keys = {
